@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgByte.OpenAI.ChatDemo.Server", "ProgByte.OpenAI.ChatDemo.Server\ProgByte.OpenAI.ChatDemo.Server.csproj", "{D0EC2373-37A5-46E3-9F74-A1976AA4F7A3}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "progbyte.openai.chatdemo.client", "progbyte.openai.chatdemo.client\progbyte.openai.chatdemo.client.esproj", "{12741805-FA6A-4519-8698-E59A8E5244D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0EC2373-37A5-46E3-9F74-A1976AA4F7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EC2373-37A5-46E3-9F74-A1976AA4F7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EC2373-37A5-46E3-9F74-A1976AA4F7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EC2373-37A5-46E3-9F74-A1976AA4F7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12741805-FA6A-4519-8698-E59A8E5244D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12741805-FA6A-4519-8698-E59A8E5244D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12741805-FA6A-4519-8698-E59A8E5244D7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{12741805-FA6A-4519-8698-E59A8E5244D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12741805-FA6A-4519-8698-E59A8E5244D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12741805-FA6A-4519-8698-E59A8E5244D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0DEC617-1D63-4D72-BE21-0BC02366DF56}
+	EndGlobalSection
+EndGlobal
