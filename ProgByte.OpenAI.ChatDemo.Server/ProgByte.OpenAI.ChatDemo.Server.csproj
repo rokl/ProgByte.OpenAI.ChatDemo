@@ -7,6 +7,7 @@
     <SpaRoot>..\progbyte.openai.chatdemo.client</SpaRoot>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <SpaProxyServerUrl>https://localhost:4200</SpaProxyServerUrl>
+    <UserSecretsId>0b6a4619-1e3b-4a87-b88e-cab7c12250f5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,9 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.AI.OpenAI" Version="2.0.0-beta.1" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

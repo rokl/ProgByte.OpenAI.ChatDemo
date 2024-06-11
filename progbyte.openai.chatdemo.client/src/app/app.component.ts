@@ -1,31 +1,32 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  public forecasts: WeatherForecast[] = [];
+  public messages: string[] = [];
+  public message: string = "";
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getForecasts();
+
   }
 
-  getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
+  processMessage() {
+    this.messages.push(this.message);
+    this.postMessage();
+    this.message = "";
+  }
+
+  postMessage() {
+    this.http.post<string>('/OpenAI/postMessage', { messages: this.messages }).subscribe(
       (result) => {
-        this.forecasts = result;
+        console.log(result);
+        this.messages.push(result);
       },
       (error) => {
         console.error(error);

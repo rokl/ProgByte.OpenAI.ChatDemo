@@ -1,8 +1,12 @@
+using ProgByte.OpenAI.ChatDemo.Server.Extensions.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddApplication(builder.Configuration);
 
 var app = builder.Build();
 
